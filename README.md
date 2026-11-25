@@ -7,6 +7,7 @@ Elle est partagée par les applications coptes (KatamerosCopte, LivreAGPIA, futu
 - `CopticDate`, `CopticMonth` : date copte (ère des Martyrs) et ses 13 mois. `key` donne la clé stable « MM-JJ », toujours en chiffres latins.
 - `CopticCalendar` : conversion grégorien ↔ copte (`LocalDate.toCoptic()`, `CopticDate.toGregorian()`) et années bissextiles coptes.
 - `Paschalion` : Pâques copte (comput julien) et `daysFromEaster`.
+- `LiturgyContract` : contrat d'intégration entre applications (liens `copte://`, ContentProvider de KatamerosCopte, colonnes, permission de signature). Ces valeurs sont publiques et stables.
 - `LiturgicalCalendar.dayOf(date)` renvoie un `LiturgicalDay` : date copte, jour de la semaine, jours depuis Pâques, temps liturgique (`Season`), fêtes (`Feast`) et rang du dimanche dans le mois copte.
 
 ```kotlin

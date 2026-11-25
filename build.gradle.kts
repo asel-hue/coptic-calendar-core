@@ -7,7 +7,12 @@ plugins {
 }
 
 group = "com.github.asel-hue"
-version = "0.2.0-SNAPSHOT"
+version = "0.3.0-SNAPSHOT"
+
+// OneDrive verrouille les dossiers build/ : sous Windows, sorties de build dans %LOCALAPPDATA%.
+System.getenv("LOCALAPPDATA")?.let { local ->
+    if (rootDir.absolutePath.contains("OneDrive")) layout.buildDirectory.set(File(local, "gradle-builds/coptic-calendar-core"))
+}
 
 repositories {
     mavenCentral()
