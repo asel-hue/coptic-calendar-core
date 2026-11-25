@@ -1,0 +1,10 @@
+{
+  "extraKnownMarketplaces": {
+    "coptic-tools": {
+      "source": { "source": "github", "repo": "asel-hue/coptic-claude-plugin" }
+    }
+  },
+  "enabledPlugins": {
+    "coptic-dev@coptic-tools": true
+  }
+}
